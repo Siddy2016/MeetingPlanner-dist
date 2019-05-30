@@ -1832,7 +1832,7 @@ var SignupComponent = /** @class */ (function () {
                     if (apiResponse.status === 200) {
                         data['activateUserToken'] = apiResponse.data.activateUserToken;
                         _this.emailService.sendWelcomeEmail(data);
-                        _this.toastrService.success(data.email, 'Verification email sent to:');
+                        _this.toastrService.success(data.email, 'Account successfully created for:');
                         setTimeout(function () {
                             _this.router.navigate(['/']);
                         }, 2000);
